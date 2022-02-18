@@ -10,6 +10,6 @@ blocks:
       jobs:
         - name: sbt test
           commands:
-            - sem-version java-11
+            - sem-version java-1.8
             - checkout
             - sbt assembly
