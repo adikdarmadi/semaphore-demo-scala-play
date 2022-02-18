@@ -5,11 +5,11 @@ agent:
     type: e1-standard-2
     os_image: ubuntu2004
 blocks:
-  - name: Test
+  - name: Build
     task:
       jobs:
-        - name: sbt test
+        - name: sbt assembly
           commands:
-            - sem-version java-1.8
+            - sem-version java 1.8
             - checkout
             - sbt assembly
